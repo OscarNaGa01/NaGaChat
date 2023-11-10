@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "754668215998",
+    "project_id": "practica-chat-380da",
+    "storage_bucket": "practica-chat-380da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754668215998:android:cffd8b7b51cf81d23588ef",
+        "android_client_info": {
+          "package_name": "com.example.practicachat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdddKf3WDMy7R3nSR37x0zB-1O9Z9Qrk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
