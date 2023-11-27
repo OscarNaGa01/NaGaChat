@@ -7,7 +7,7 @@
     tools:context=".ui.chat.ChatFragment">
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/toolbar"
+        android:id="@+id/llToolbar"
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
         android:orientation="horizontal"
@@ -39,7 +39,7 @@
         android:layout_height="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/llToolbar" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMsg"
@@ -56,10 +56,10 @@
         android:layout_height="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/chat" />
+        app:layout_constraintBottom_toTopOf="@id/llChat" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/chat"
+        android:id="@+id/llChat"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

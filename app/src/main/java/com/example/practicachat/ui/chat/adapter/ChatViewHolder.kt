@@ -16,16 +16,23 @@ class ChatViewHolder(private val binding: ViewBinding) : RecyclerView.ViewHolder
 
     private fun bindReceivedMessage(messageModel: MessageModel) {
         val currentBinding = binding as ItemChatOtherBinding
-        currentBinding.tvDate.text = messageModel.date
-        currentBinding.tvChat.text = messageModel.msg
-        currentBinding.tvName.text = messageModel.user.userName
-        currentBinding.tvHour.text = messageModel.hour
+        with(currentBinding){
+            tvDate.text = messageModel.date
+            tvChat.text = messageModel.msg
+            tvName.text = messageModel.user.userName
+            tvHour.text = messageModel.hour
+        }
+        //Get used to use scope functions, created by Kotlin to make your code more readable
+        // easy to understand and avoid duplicated code
     }
 
     private fun bindSentMessage(messageModel: MessageModel) {
         val currentBinding = binding as ItemChatMeBinding
-        currentBinding.tvDateMe.text = messageModel.date
-        currentBinding.tvChatMe.text = messageModel.msg
-        currentBinding.tvHour.text = messageModel.hour
+        with(currentBinding){
+            tvDateMe.text = messageModel.date
+            tvChatMe.text = messageModel.msg
+            tvHour.text = messageModel.hour
+        }
+        //same here
     }
 }

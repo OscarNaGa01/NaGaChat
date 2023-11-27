@@ -28,24 +28,30 @@ class ChatFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentChatBinding.inflate(inflater, container, false)
-        binding.ivBack.setOnClickListener {
-            findNavController().navigate(R.id.action_back)
-        }
+        initListeners()
         setUpUI()
-        binding.btnSendMsg.setOnClickListener {
-            val msg = binding.etChat.text.toString()
-            if (msg.isNotEmpty()) {
-                viewModel.sendMessage(msg)
-            }
-            binding.etChat.text.clear()
-        }
         return binding.root
+    }
+
+    private fun initListeners() {
+        with(binding){
+            ivBack.setOnClickListener {
+                findNavController().navigate(R.id.action_back)
+            }
+            btnSendMsg.setOnClickListener {
+                val msg = etChat.text.toString()
+                if (msg.isNotEmpty()) {
+                    viewModel.sendMessage(msg)
+                    etChat.text.clear()
+                }
+                //if msg is empty is useless clear the text of the editText
+            }
+        }
     }
 
     private fun setUpUI() {
         setUpMessages()
         subscribeToMessages()
-
     }
 
     private fun setUpMessages() {

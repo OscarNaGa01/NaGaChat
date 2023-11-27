@@ -22,12 +22,16 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentMainBinding.inflate(inflater, container, false)
+        initListeners()
+        return binding.root
+    }
+
+    private fun initListeners() {
         binding.btnChat.setOnClickListener {
             if (!binding.tietName.text.isNullOrEmpty()){
                 viewModel.saveNickName(binding.tietName.text.toString())
                 findNavController().navigate(R.id.action_main_fragment_to_chat_fragment)
             }
         }
-        return binding.root
     }
 }

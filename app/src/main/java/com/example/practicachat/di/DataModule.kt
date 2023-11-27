@@ -2,7 +2,7 @@ package com.example.practicachat.di
 
 import android.content.Context
 import com.example.practicachat.data.database.DatabaseServiceImpl
-import com.example.practicachat.data.network.FirebaseChatService
+import com.example.practicachat.data.network.api.FirebaseChatService
 import com.example.practicachat.domain.DatabaseService
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database

@@ -1,5 +1,6 @@
-package com.example.practicachat.domain
+package com.example.practicachat.domain.usecases
 
+import com.example.practicachat.domain.DatabaseService
 import kotlinx.coroutines.flow.first
 import javax.inject.Inject
 

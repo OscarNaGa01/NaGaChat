@@ -4,10 +4,10 @@ import com.example.practicachat.domain.model.MessageModel
 import com.example.practicachat.domain.model.UserModel
 
 class MessageResponse (
-    val msg: String? = null,
-    val hour: String? = null,
-    val date: String? = null,
-    val user: UserResponse? = null
+    private val msg: String? = null,
+    private val hour: String? = null,
+    private val date: String? = null,
+    private val user: UserResponse? = null
 ) {
     fun toDomain(): MessageModel {
         return MessageModel(

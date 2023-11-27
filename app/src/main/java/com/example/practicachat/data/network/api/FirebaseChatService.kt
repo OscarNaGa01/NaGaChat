@@ -1,9 +1,8 @@
-package com.example.practicachat.data.network
+package com.example.practicachat.data.network.api
 
 import com.example.practicachat.data.network.dto.MessageDto
 import com.example.practicachat.data.network.response.MessageResponse
 import com.example.practicachat.domain.model.MessageModel
-import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.snapshots
 import kotlinx.coroutines.flow.Flow
