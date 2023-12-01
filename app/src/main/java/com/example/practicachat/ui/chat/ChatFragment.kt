@@ -29,7 +29,7 @@ class ChatFragment : Fragment() {
     ): View {
         binding = FragmentChatBinding.inflate(inflater, container, false)
         binding.ivBack.setOnClickListener {
-            findNavController().navigate(R.id.action_back)
+            viewModel.logout { findNavController().navigate(R.id.action_back) }
         }
         setUpUI()
         binding.btnSendMsg.setOnClickListener {
@@ -45,7 +45,10 @@ class ChatFragment : Fragment() {
     private fun setUpUI() {
         setUpMessages()
         subscribeToMessages()
+    }
 
+    private fun setUpToolbar() {
+        binding.tvMyName.text = viewModel.name
     }
 
     private fun setUpMessages() {
@@ -59,6 +62,7 @@ class ChatFragment : Fragment() {
     private fun subscribeToMessages() {
         lifecycleScope.launch {
             viewModel.messageList.collect {
+                setUpToolbar()
                 chatAdapter.updateList(it.toMutableList(), viewModel.name)
                 binding.rvMsg.scrollToPosition(chatAdapter.messageList.size - 1)
             }
