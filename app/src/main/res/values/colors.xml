@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="hour_date_color">#C0C0C0</color>
-    <color name="card_me_background">#774df2</color>
-    <color name="card_other_background">#eef1f6</color>
-    <color name="message_me_color">#FFFFFF</color>
-    <color name="message_other_color">#000000</color>
+    <color name="card_me_background">#67A9EC</color>
+    <color name="card_other_background">#2580DD</color>
+    <color name="message_color">#FFFFFF</color>
+    <color name="menu_primary_color">#2580DD</color>
+    <color name="menu_secondary_color">#67A9EC</color>
+    <color name="button_color">#0055AC</color>
 </resources>

@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:paddingHorizontal="12dp"
             android:paddingVertical="8dp"
-            android:textColor="@color/message_me_color"
+            android:textColor="@color/message_color"
             tools:text="Ejemplo de mensaje" />
 
     </androidx.cardview.widget.CardView>

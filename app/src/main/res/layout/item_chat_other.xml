@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:elevation="0dp"
-        app:cardBackgroundColor="@color/card_me_background"
+        app:cardBackgroundColor="@color/card_other_background"
         app:cardCornerRadius="12dp"
         android:layout_marginEnd="10dp"
         app:cardUseCompatPadding="true"
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:paddingHorizontal="12dp"
             android:paddingVertical="8dp"
-            android:textColor="@color/message_me_color"
+            android:textColor="@color/message_color"
             tools:text="Ejemplo de mensaje" />
 
     </androidx.cardview.widget.CardView>

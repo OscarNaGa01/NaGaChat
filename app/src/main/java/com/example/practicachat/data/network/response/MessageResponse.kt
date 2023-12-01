@@ -3,7 +3,7 @@ package com.example.practicachat.data.network.response
 import com.example.practicachat.domain.model.MessageModel
 import com.example.practicachat.domain.model.UserModel
 
-class MessageResponse (
+data class MessageResponse (
     val msg: String? = null,
     val hour: String? = null,
     val date: String? = null,
@@ -12,8 +12,8 @@ class MessageResponse (
     fun toDomain(): MessageModel {
         return MessageModel(
             msg.orEmpty(),
-            hour ?: "no date",
-            date.orEmpty(),
+            hour ?: "no hour",
+            date ?: "no date",
             user = UserModel(userName = user?.userName ?: "Guess", admin = user?.admin ?: false)
         )
     }
