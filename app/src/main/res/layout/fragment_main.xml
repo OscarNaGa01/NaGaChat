@@ -10,7 +10,8 @@
         android:id="@+id/ivLogo"
         android:layout_width="0dp"
         android:layout_height="200dp"
-        android:src="@drawable/aristichat_logo"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo_chat"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
